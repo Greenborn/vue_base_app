@@ -1,0 +1,23 @@
+{
+  "name": "vue_base_app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.2.2",
+    "axios": "^1.7.8",
+    "jspdf": "^2.5.2",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.3",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "vite": "^5.4.10"
+  }
+}
