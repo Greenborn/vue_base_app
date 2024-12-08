@@ -5,6 +5,8 @@ import 'primeicons/primeicons.css'
 import PrimeVue from 'primevue/config';
 import Aura from '@primevue/themes/aura';
 
+import { createPinia } from "pinia";
+
 import Splitter from "primevue/splitter";
 import SplitterPanel from 'primevue/splitterpanel';
 import Dialog from "primevue/dialog";
@@ -49,6 +51,7 @@ createApp(App)
 .component("AccordionPanel", AccordionPanel)
 .component("AccordionHeader", AccordionHeader)
 .component("AccordionContent", AccordionContent)
+.use(createPinia())
 .use(PrimeVue, {
     theme: {
         preset: Aura
