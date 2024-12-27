@@ -11,12 +11,15 @@
       </TabPanel>
 
   </TabPanels>
+  <ModalsManager />
 </Tabs>
 
 </template>
 
 <script setup>
 import { ref } from 'vue'
+
+import ModalsManager from './components/genericos/ModalsManager.vue';
 
 </script>
 

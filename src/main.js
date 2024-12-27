@@ -28,9 +28,14 @@ import StepPanels from 'primevue/steppanels';
 import StepItem from 'primevue/stepitem';
 import Step from 'primevue/step';
 import StepPanel from 'primevue/steppanel';
+import Card from 'primevue/card';
+import ProgressSpinner from 'primevue/progressspinner';
+
 
 createApp(App)
+.component("Card", Card)
 .component("Stepper", Stepper)
+.component("ProgressSpinner", ProgressSpinner)
 .component("StepList", StepList)
 .component("StepPanels", StepPanels)
 .component("StepItem", StepItem)
@@ -51,10 +56,12 @@ createApp(App)
 .component("AccordionPanel", AccordionPanel)
 .component("AccordionHeader", AccordionHeader)
 .component("AccordionContent", AccordionContent)
+
 .use(createPinia())
 .use(PrimeVue, {
     theme: {
         preset: Aura
     }
 })
+
 .mount('#app')
